@@ -1,0 +1,6 @@
+enjoy-digital LITEX BOARD
+M:	Marcin Sloniewski <marcin.sloniewski@gmail.com>
+S:	Maintained
+F:	board/enjoy-digital/litex/
+F:	include/configs/litex.h
+F:	configs/litex_defconfig
