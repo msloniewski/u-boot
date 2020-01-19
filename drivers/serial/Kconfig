@@ -191,6 +191,13 @@ config DEBUG_UART_ALTERA_JTAGUART
 	  You will need to provide parameters to make this work. The driver will
 	  be available until the real driver model serial is running.
 
+config DEBUG_UART_LITEX_UART
+	bool "Litex UART"
+	help
+	  Select this to enable a debug UART using the serial_litex driver.
+	  You will need to provide parameters to make this work. The driver will
+	  be available until the real driver model serial is running.
+
 config DEBUG_UART_ALTERA_UART
 	bool "Altera UART"
 	help
@@ -606,6 +613,12 @@ config INTEL_MID_SERIAL
 	help
 	  Select this to enable a UART for Intel MID platforms.
 	  This uses the ns16550 driver as a library.
+
+config LITEX_SERIAL
+	bool "Litex UART support"
+	depends on DM_SERIAL
+	help
+	  Select this to enable an UART for Litex SoC.
 
 config PL010_SERIAL
 	bool "ARM PL010 driver"
